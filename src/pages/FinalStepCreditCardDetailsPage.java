@@ -77,81 +77,58 @@ public class FinalStepCreditCardDetailsPage extends BasePage {
 		el.click();
 
 	}
-	
-	
+
 //	public void getCardNumberField() {
 //	WebDriverWait(session, 20).until(EC.frame_to_be_available_and_switch_to_it((By.ID,"braintree-hosted-field-number")));
 //	WebDriverWait(session, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "input.number#credit-card-number"))).send_keys("0000000000000000");
 //	
 //	ccNumber = session.find_element_by_css_selector('input[name=credit-card-number]')
 //			wait = WebDriverWait(session, 100)wait.until(EC.element_to_be_selected(ccNumber))
-//	
-//	
 //	}
-	
-	
 
-//	public WebElement getCardNumberField() {
-//	return Browser.getBrowser().findElement(By.id(cardNumber));
-//}
+//	public void getCardNumberField() {
+//	WebElement element = Browser.getBrowser().findElement(By.xpath(cardNumber));
+//	JavascriptExecutor executor = (JavascriptExecutor)Browser.getBrowser();
+//	executor.executeScript("arguments[0].click();", element);
+//	}
+
+//	public void getCardNumberField() {
+//	WebDriverWait wait = new WebDriverWait(Browser.getBrowser(), Duration.ofSeconds(5));
+//	WebElement minusButton = Browser.getBrowser().findElement(By.cssSelector(cardNumber));
+//	minusButton.click();
+
+//	public void getCardNumberField() {
+//	JavascriptExecutor executor = (JavascriptExecutor)Browser.getBrowser();
+//	executor.executeScript("arguments[0].click();", element);
+//	Browser.getBrowser().execute_script(cardNumber.click());
+//	}
+
+//	public void getSecurityCodeField() {
+//	WebElement element = Browser.getBrowser().findElement(By.id(securityCode));
+//	 JavascriptExecutor jse = (JavascriptExecutor)Browser.getBrowser();
+//	 jse.executeScript("arguments[0].value='222';", element);
+//	}
+
+//	
 //
-//public WebElement getExpiryDateField() {
-//	return Browser.getBrowser().findElement(By.id(expiryDate));
-//}
-//
-//public WebElement getSecurityCodeField() {
-//	return Browser.getBrowser().findElement(By.id(securityCode));
-//}
-//
-//public WebElement getNameOnCardField() {
-//	return Browser.getBrowser().findElement(By.id(nameOnCard));
-//}
-//
-//public WebElement getBillingCountryField() {
-//	return findElement(billingCountry);
-//}
-//
-//public WebElement getPostalCodeField() {
-//	return Browser.getBrowser().findElement(By.id(postalCode));
-//}
-//
-//public WebElement getConfirmBookingButton() {
-//	return findElement(confirmBookingButton);
-//}
+//	public WebElement getConfirmBookingButton() {
+//		return findElement(confirmBookingButton);
+//	}
 
 //	public void getSecurityCodeField() {
 //		JavascriptExecutor js = (JavascriptExecutor)Browser.getBrowser();
-//		  js.executeScript("document.getElementById('cvv').value='222';");
+//		 js.executeScript("document.getElementById('cvv').value='222';");
 //	}
 
-//	public void getSecurityCodeField() {
-//		WebElement element = Browser.getBrowser().findElement(By.id(securityCode));
-//		 JavascriptExecutor jse = (JavascriptExecutor)Browser.getBrowser();
-//		 jse.executeScript("arguments[0].value='222';", element);
-//	}
 
-//	
-//	
-//	
-//	
 //	
 //	
 //	public WebElement getCardNumberField() {
 //		return	Browser.getBrowser().findElement(By.id(nameOnCard));
-//}
+//	}
 //	
 //	
-//	
-//	
-//	
-//	
-//	
-////	public void getCardNumberField() {
-////		JavascriptExecutor executor = (JavascriptExecutor)Browser.getBrowser();
-////		executor.executeScript("arguments[0].click();", element);
-////		Browser.getBrowser().execute_script(cardNumber.click());
-////	}
-//	
+
 //	
 //	
 //	
@@ -168,9 +145,9 @@ public class FinalStepCreditCardDetailsPage extends BasePage {
 //	
 //	
 //	
-////	public WebElement getNameOnCardField() {
-////		return findElement(nameOnCard);
-////	}
+//	public WebElement getNameOnCardField() {
+//		return findElement(nameOnCard);
+//	}
 //	
 //	public void getNameOnCardField() {
 //		Browser.getBrowser().findElement(By.id("cardholder-name")).sendKeys("Goa", Keys.ENTER);
@@ -181,59 +158,8 @@ public class FinalStepCreditCardDetailsPage extends BasePage {
 //	
 //	
 //	
-//
-//
-//	public WebElement getPostalCodeField() {
-//		return findElement(postalCode);
-//	}
-//	
+/
 
-//	public void getViewAvailability() {
-//	
-//		WebDriverWait wait = new WebDriverWait(Browser.getBrowser(), Duration.ofSeconds(10));
-//		WebElement el = wait
-//				.until(ExpectedConditions.elementToBeClickable(By.xpath(viewAvailability)));
-//
-//		el.click();
-//	}
-
-//	public void getInstantBookHalfDayTripPm() {
-//	
-//	WebDriverWait wait = new WebDriverWait(Browser.getBrowser(), Duration.ofSeconds(10));
-//	WebElement el = wait
-//			.until(ExpectedConditions.elementToBeClickable(By.xpath("instantBookHalfDayTripPm")));
-//
-//	el.click();
-//}	
-
-//	public void getCheckAvailability() {
-//	
-//	WebDriverWait wait = new WebDriverWait(Browser.getBrowser(), Duration.ofSeconds(10));
-//	WebElement el = wait
-//			.until(ExpectedConditions.elementToBeClickable(By.xpath("checkAvailability")));
-//
-//	el.click();
-//}	
-
-//	public void getTripDateBoxCalendarDay() {
-//	
-//		WebDriverWait wait = new WebDriverWait(Browser.getBrowser(), Duration.ofSeconds(10));
-//		WebElement el = wait
-//				.until(ExpectedConditions.elementToBeClickable(By.xpath("tripDateBoxCalendarDay")));
-//
-//		el.click();
-//	}	
-
-//	public void getGroupSizeAdultsMinusButton() {
-//	WebElement element = Browser.getBrowser().findElement(By.xpath("groupSizeAdultsMinusButton"));
-//	JavascriptExecutor executor = (JavascriptExecutor)Browser.getBrowser();
-//	executor.executeScript("arguments[0].click();", element);
-//}
-
-//	public void getGroupSizeAdultsMinusButton() {
-//	WebDriverWait wait = new WebDriverWait(Browser.getBrowser(), Duration.ofSeconds(5));
-//	WebElement minusButton = Browser.getBrowser().findElement(By.cssSelector(groupSizeAdultsMinusButton));
-//	minusButton.click();
 //}
 
 }
