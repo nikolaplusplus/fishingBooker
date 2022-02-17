@@ -84,46 +84,4 @@ public class FsbFishingTourPage extends BasePage {
 		el.click();
 	}
 
-//	public WebElement getPopUp() {
-//		return findElement(popUpWindowCloseButton);
-//	}
-//
-//	public WebElement getGroupSize() {
-//		return findElement(groupSizeBox);
-//	}
-//	
-//
-//	public WebElement getChangeSearch() {
-//		return findElement(changeSearch);
-//	}
-//
-//	public WebElement getTripDateBox() {
-//		return findElement(tripDateBox);
-//	}
-//
-//	public WebElement getGroupSizeAdultsMinusButton() {
-//		return findElement(groupSizeAdultsMinusButton);
-//	}
-//
-//	public WebElement getGroupSizeChildrenPlusButton() {
-//		return findElement(groupSizeChildrenPlusButton);
-//	}
-//
-//	public WebElement getTripDateBoxCalendarDay() {
-//		return findElement(tripDateBoxCalendarDay);
-//	}
-//
-//	public WebElement getCheckAvailability() {
-//		return findElement(checkAvailability);
-//	}
-//
-//	public WebElement getInstantBookHalfDayTripPm() {
-//		return findElement(instantBookHalfDayTripPm);
-//
-//	}
-//
-//	public WebElement getViewAvailability() {
-//		return findElement(viewAvailability);
-//	}
-
 }
