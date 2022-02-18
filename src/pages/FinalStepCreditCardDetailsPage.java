@@ -20,7 +20,7 @@ public class FinalStepCreditCardDetailsPage extends BasePage {
 	private String billingCountryBox = "//body/div[@id='main-content']/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/form[1]/div[1]/div[1]/div[1]/div[5]/div[2]/div[4]/div[1]/div[1]/select[1]";
 	private String billingCountrySerbia = "//option[contains(text(),'Serbia')]";
 	private String postalCode = "postal-code";
-	private String confirmBookingButton = "//body/div[@id='main-content']/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/form[1]/div[3]/div[1]/div[2]/button[1]";
+	private String confirmBookingButton = "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/form[1]/div[3]/div[1]/div[2]/button[1]";
 
 	public void getCardNumberField() {
 		WebDriverWait wait = new WebDriverWait(Browser.getBrowser(), Duration.ofSeconds(5));
@@ -28,6 +28,7 @@ public class FinalStepCreditCardDetailsPage extends BasePage {
 		WebElement p = Browser.getBrowser().findElement(By.id(cardNumber));
 		p.click();
 		p.sendKeys("4009348888881881");
+		Browser.getBrowser().switchTo().defaultContent();
 	}
 
 	public void getExpiryDateField() {
@@ -36,6 +37,7 @@ public class FinalStepCreditCardDetailsPage extends BasePage {
 		WebElement p = Browser.getBrowser().findElement(By.id(expiryDate));
 		p.click();
 		p.sendKeys("224");
+		Browser.getBrowser().switchTo().defaultContent();
 	}
 
 	public void getSecurityCodeField() {
@@ -44,6 +46,7 @@ public class FinalStepCreditCardDetailsPage extends BasePage {
 		WebElement p = Browser.getBrowser().findElement(By.id(securityCode));
 		p.click();
 		p.sendKeys("569");
+		Browser.getBrowser().switchTo().defaultContent();
 	}
 
 	public void getNameOnCardField() {
@@ -52,14 +55,8 @@ public class FinalStepCreditCardDetailsPage extends BasePage {
 		WebElement p = Browser.getBrowser().findElement(By.id(nameOnCard));
 		p.click();
 		p.sendKeys("Petar");
+		Browser.getBrowser().switchTo().defaultContent();
 	}
-
-//	public void getBillingCountryField() {
-//		WebDriverWait wait = new WebDriverWait(Browser.getBrowser(), Duration.ofSeconds(5));
-//		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(""));
-//		WebElement p = Browser.getBrowser().findElement(By.id(billingCountryBox));
-//		p.click();
-//	}
 
 	public void getBillingCountryField() {
 		WebDriverWait wait = new WebDriverWait(Browser.getBrowser(), Duration.ofSeconds(10));
@@ -80,14 +77,8 @@ public class FinalStepCreditCardDetailsPage extends BasePage {
 		WebElement p = Browser.getBrowser().findElement(By.id(postalCode));
 		p.click();
 		p.sendKeys("11070");
+		Browser.getBrowser().switchTo().defaultContent();
 	}
-
-//	public void getConfirmBookingButton() {
-//		WebDriverWait wait = new WebDriverWait(Browser.getBrowser(), Duration.ofSeconds(5));
-//		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(""));
-//		WebElement p = Browser.getBrowser().findElement(By.id(confirmBookingButton));
-//		p.click();
-//	}
 
 	public void getConfirmBookingButton() {
 		WebDriverWait wait = new WebDriverWait(Browser.getBrowser(), Duration.ofSeconds(10));
