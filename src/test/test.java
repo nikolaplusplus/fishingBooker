@@ -1,14 +1,10 @@
 package test;
 
-import static org.junit.Assert.*;
-
 import java.io.IOException;
 import java.time.Duration;
-import java.util.concurrent.TimeUnit;
+import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import browser.Browser;
 
@@ -23,8 +19,6 @@ public class test extends BaseTest {
 		fishingBooker.getFsbFishingTourPage().clickOnGroupSizeAdultsMinusButton();
 		fishingBooker.getFsbFishingTourPage().clickOnGroupSizeChildrenPlusButton();
 		fishingBooker.getFsbFishingTourPage().clickOnCheckAvailabilityButton();
-//		Browser.getBrowser().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
-		Thread.sleep(2000);
 		fishingBooker.getFsbFishingTourPage().clickOnHalfDayTripPmInstantBookButton();
 
 		fishingBooker.getHalfDayTripBookingDetailsPage().populateFirstNameField();
@@ -49,6 +43,11 @@ public class test extends BaseTest {
 //		Browser.getBrowser().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
 		Thread.sleep(20000);
 		fishingBooker.getBookingDonePage().getBookingNumberAndCopyToTxtFile();
+
+		Assert.assertTrue(Browser.getBrowser()
+				.findElement(
+						By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[3]/div[1]/div[2]/strong[1]"))
+				.isDisplayed());
 
 	}
 
