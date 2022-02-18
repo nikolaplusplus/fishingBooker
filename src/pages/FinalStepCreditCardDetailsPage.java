@@ -22,7 +22,7 @@ public class FinalStepCreditCardDetailsPage extends BasePage {
 	private String postalCode = "postal-code";
 	private String confirmBookingButton = "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/form[1]/div[3]/div[1]/div[2]/button[1]";
 
-	public void getCardNumberField() {
+	public void populateCardNumberField() {
 		WebDriverWait wait = new WebDriverWait(Browser.getBrowser(), Duration.ofSeconds(5));
 		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt("braintree-hosted-field-number"));
 		WebElement p = Browser.getBrowser().findElement(By.id(cardNumber));
@@ -31,7 +31,7 @@ public class FinalStepCreditCardDetailsPage extends BasePage {
 		Browser.getBrowser().switchTo().defaultContent();
 	}
 
-	public void getExpiryDateField() {
+	public void populateExpiryDateField() {
 		WebDriverWait wait = new WebDriverWait(Browser.getBrowser(), Duration.ofSeconds(5));
 		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt("braintree-hosted-field-expirationDate"));
 		WebElement p = Browser.getBrowser().findElement(By.id(expiryDate));
@@ -40,7 +40,7 @@ public class FinalStepCreditCardDetailsPage extends BasePage {
 		Browser.getBrowser().switchTo().defaultContent();
 	}
 
-	public void getSecurityCodeField() {
+	public void populateSecurityCodeField() {
 		WebDriverWait wait = new WebDriverWait(Browser.getBrowser(), Duration.ofSeconds(5));
 		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt("braintree-hosted-field-cvv"));
 		WebElement p = Browser.getBrowser().findElement(By.id(securityCode));
@@ -49,7 +49,7 @@ public class FinalStepCreditCardDetailsPage extends BasePage {
 		Browser.getBrowser().switchTo().defaultContent();
 	}
 
-	public void getNameOnCardField() {
+	public void populateNameOnCardField() {
 		WebDriverWait wait = new WebDriverWait(Browser.getBrowser(), Duration.ofSeconds(5));
 		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt("braintree-hosted-field-cardholderName"));
 		WebElement p = Browser.getBrowser().findElement(By.id(nameOnCard));
@@ -58,20 +58,20 @@ public class FinalStepCreditCardDetailsPage extends BasePage {
 		Browser.getBrowser().switchTo().defaultContent();
 	}
 
-	public void getBillingCountryField() {
+	public void clickOnBillingCountryDropdown() {
 		WebDriverWait wait = new WebDriverWait(Browser.getBrowser(), Duration.ofSeconds(10));
 		WebElement el = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(billingCountryBox)));
 		el.click();
 
 	}
 
-	public void getBillingCountrySerbia() {
+	public void clickOnBillingCountrySerbia() {
 		WebDriverWait wait = new WebDriverWait(Browser.getBrowser(), Duration.ofSeconds(10));
 		WebElement el = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(billingCountrySerbia)));
 		el.click();
 	}
 
-	public void getPostalCodeField() {
+	public void populatePostalCodeField() {
 		WebDriverWait wait = new WebDriverWait(Browser.getBrowser(), Duration.ofSeconds(5));
 		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt("braintree-hosted-field-postalCode"));
 		WebElement p = Browser.getBrowser().findElement(By.id(postalCode));
@@ -80,7 +80,7 @@ public class FinalStepCreditCardDetailsPage extends BasePage {
 		Browser.getBrowser().switchTo().defaultContent();
 	}
 
-	public void getConfirmBookingButton() {
+	public void clickOnConfirmBookingButton() {
 		WebDriverWait wait = new WebDriverWait(Browser.getBrowser(), Duration.ofSeconds(10));
 		WebElement el = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(confirmBookingButton)));
 		el.click();

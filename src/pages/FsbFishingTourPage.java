@@ -24,61 +24,61 @@ public class FsbFishingTourPage extends BasePage {
 	private String instantBookHalfDayTripPm = "//body/div[@id='main-content']/div[1]/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[2]/form[1]/div[2]/div[1]/ul[1]/div[1]/li[4]/div[1]/div[2]/div[1]/div[2]/button[1]";
 	private String popUpWindowCloseButton = "//body/div[6]/div[2]/button[1]/span[1]";
 
-	public void getGroupSize() {
+	public void clickOnGroupSizeDropdown() {
 		WebDriverWait wait = new WebDriverWait(Browser.getBrowser(), Duration.ofSeconds(10));
 		WebElement el = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(groupSizeBox)));
 		el.click();
 	}
 
-	public void getChangeSearch() {
+	public void clickOnChangeSearchButton() {
 		WebDriverWait wait = new WebDriverWait(Browser.getBrowser(), Duration.ofSeconds(10));
 		WebElement el = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(changeSearch)));
 		el.click();
 	}
 
-	public void getPopUp() {
+	public void closePopUpWindow() {
 		WebDriverWait wait = new WebDriverWait(Browser.getBrowser(), Duration.ofSeconds(10));
 		WebElement el = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(popUpWindowCloseButton)));
 		el.click();
 	}
 
-	public void getTripDateBox() {
+	public void clickOnTripDateDropdown() {
 		WebDriverWait wait = new WebDriverWait(Browser.getBrowser(), Duration.ofSeconds(10));
 		WebElement el = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(tripDateBox)));
 		el.click();
 	}
-
-	public void getGroupSizeAdultsMinusButton() {
-		WebDriverWait wait = new WebDriverWait(Browser.getBrowser(), Duration.ofSeconds(10));
-		WebElement el = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(groupSizeAdultsMinusButton)));
-		el.click();
-	}
-
-	public void getGroupSizeChildrenPlusButton() {
-		WebDriverWait wait = new WebDriverWait(Browser.getBrowser(), Duration.ofSeconds(10));
-		WebElement el = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(groupSizeChildrenPlusButton)));
-		el.click();
-	}
-
-	public void getTripDateBoxCalendarDay() {
+	
+	public void clickOnCalendarDayInTripDateDropdown() {
 		WebDriverWait wait = new WebDriverWait(Browser.getBrowser(), Duration.ofSeconds(10));
 		WebElement el = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(tripDateBoxCalendarDay)));
 		el.click();
 	}
 
-	public void getCheckAvailability() {
+	public void clickOnGroupSizeAdultsMinusButton() {
+		WebDriverWait wait = new WebDriverWait(Browser.getBrowser(), Duration.ofSeconds(10));
+		WebElement el = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(groupSizeAdultsMinusButton)));
+		el.click();
+	}
+
+	public void clickOnGroupSizeChildrenPlusButton() {
+		WebDriverWait wait = new WebDriverWait(Browser.getBrowser(), Duration.ofSeconds(10));
+		WebElement el = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(groupSizeChildrenPlusButton)));
+		el.click();
+	}
+
+	public void clickOnCheckAvailabilityButton() {
 		WebDriverWait wait = new WebDriverWait(Browser.getBrowser(), Duration.ofSeconds(10));
 		WebElement el = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(checkAvailability)));
 		el.click();
 	}
 
-	public void getInstantBookHalfDayTripPm() {
+	public void clickOnHalfDayTripPmInstantBookButton() {
 		WebDriverWait wait = new WebDriverWait(Browser.getBrowser(), Duration.ofSeconds(30));
 		WebElement el = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(instantBookHalfDayTripPm)));
 		el.click();
 	}
 
-	public void getViewAvailability() {
+	public void clickOnViewAvailabilityButton() {
 		WebDriverWait wait = new WebDriverWait(Browser.getBrowser(), Duration.ofSeconds(10));
 		WebElement el = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(viewAvailability)));
 		el.click();

@@ -17,15 +17,15 @@ public class test extends BaseTest {
 	@Test
 	public void test() throws InterruptedException, IOException {
 
-		fishingBooker.getFsbFishingTourPage().getViewAvailability();
-		fishingBooker.getFsbFishingTourPage().getTripDateBoxCalendarDay();
-		fishingBooker.getFsbFishingTourPage().getGroupSize();
-		fishingBooker.getFsbFishingTourPage().getGroupSizeAdultsMinusButton();
-		fishingBooker.getFsbFishingTourPage().getGroupSizeChildrenPlusButton();
-		fishingBooker.getFsbFishingTourPage().getCheckAvailability();
+		fishingBooker.getFsbFishingTourPage().clickOnViewAvailabilityButton();
+		fishingBooker.getFsbFishingTourPage().clickOnCalendarDayInTripDateDropdown();
+		fishingBooker.getFsbFishingTourPage().clickOnGroupSizeDropdown();
+		fishingBooker.getFsbFishingTourPage().clickOnGroupSizeAdultsMinusButton();
+		fishingBooker.getFsbFishingTourPage().clickOnGroupSizeChildrenPlusButton();
+		fishingBooker.getFsbFishingTourPage().clickOnCheckAvailabilityButton();
 //		Browser.getBrowser().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
 		Thread.sleep(2000);
-		fishingBooker.getFsbFishingTourPage().getInstantBookHalfDayTripPm();
+		fishingBooker.getFsbFishingTourPage().clickOnHalfDayTripPmInstantBookButton();
 
 		fishingBooker.getHalfDayTripBookingDetailsPage().getFirstNameField();
 		fishingBooker.getHalfDayTripBookingDetailsPage().getLastNameField();
@@ -37,14 +37,14 @@ public class test extends BaseTest {
 		fishingBooker.getHalfDayTripBookingDetailsPage().getContinueButton();
 
 		Browser.getBrowser().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
-		fishingBooker.getFinalStepCreditCardDetailsPage().getCardNumberField();
-		fishingBooker.getFinalStepCreditCardDetailsPage().getExpiryDateField();
-		fishingBooker.getFinalStepCreditCardDetailsPage().getSecurityCodeField();
-		fishingBooker.getFinalStepCreditCardDetailsPage().getNameOnCardField();
-		fishingBooker.getFinalStepCreditCardDetailsPage().getBillingCountryField();
-		fishingBooker.getFinalStepCreditCardDetailsPage().getBillingCountrySerbia();
-		fishingBooker.getFinalStepCreditCardDetailsPage().getPostalCodeField();
-		fishingBooker.getFinalStepCreditCardDetailsPage().getConfirmBookingButton();
+		fishingBooker.getFinalStepCreditCardDetailsPage().populateCardNumberField();
+		fishingBooker.getFinalStepCreditCardDetailsPage().populateExpiryDateField();
+		fishingBooker.getFinalStepCreditCardDetailsPage().populateSecurityCodeField();
+		fishingBooker.getFinalStepCreditCardDetailsPage().populateNameOnCardField();
+		fishingBooker.getFinalStepCreditCardDetailsPage().clickOnBillingCountryDropdown();
+		fishingBooker.getFinalStepCreditCardDetailsPage().clickOnBillingCountrySerbia();
+		fishingBooker.getFinalStepCreditCardDetailsPage().populatePostalCodeField();
+		fishingBooker.getFinalStepCreditCardDetailsPage().clickOnConfirmBookingButton();
 
 //		Browser.getBrowser().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
 		Thread.sleep(20000);

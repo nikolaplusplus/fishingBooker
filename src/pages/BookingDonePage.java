@@ -31,7 +31,7 @@ public class BookingDonePage {
 		
 		}
 	
-	public void getPopUpClose() {
+	public void closePopUpWindow() {
 		WebDriverWait wait = new WebDriverWait(Browser.getBrowser(), Duration.ofSeconds(10));
 		WebElement el = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(popUpWindowCloseButton)));
 		el.click();
