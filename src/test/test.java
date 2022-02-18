@@ -34,14 +34,14 @@ public class test extends BaseTest {
 		fishingBooker.getHalfDayTripBookingDetailsPage().getMessageBox();
 		fishingBooker.getHalfDayTripBookingDetailsPage().getContinueButton();
 
-
-//		fishingBooker.getFinalStepCreditCardDetailsPage().getCardNumberField();
-//		fishingBooker.getFinalStepCreditCardDetailsPage().getExpiryDateField();
+		Thread.sleep(2000);
+		fishingBooker.getFinalStepCreditCardDetailsPage().getCardNumberField();
+		fishingBooker.getFinalStepCreditCardDetailsPage().getExpiryDateField();
 		fishingBooker.getFinalStepCreditCardDetailsPage().getSecurityCodeField();	
-//		fishingBooker.getFinalStepCreditCardDetailsPage().getNameOnCardField();
+		fishingBooker.getFinalStepCreditCardDetailsPage().getNameOnCardField();
 //		fishingBooker.getFinalStepCreditCardDetailsPage().getBillingCountryField();
 //		fishingBooker.getFinalStepCreditCardDetailsPage().getBillingCountrySerbia();
-//		fishingBooker.getFinalStepCreditCardDetailsPage().getPostalCodeField();
+		fishingBooker.getFinalStepCreditCardDetailsPage().getPostalCodeField();
 //		fishingBooker.getFinalStepCreditCardDetailsPage().getConfirmBookingButton().click();
 		Thread.sleep(4000);
 	}
