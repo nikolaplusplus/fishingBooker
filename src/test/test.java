@@ -27,14 +27,14 @@ public class test extends BaseTest {
 		Thread.sleep(2000);
 		fishingBooker.getFsbFishingTourPage().clickOnHalfDayTripPmInstantBookButton();
 
-		fishingBooker.getHalfDayTripBookingDetailsPage().getFirstNameField();
-		fishingBooker.getHalfDayTripBookingDetailsPage().getLastNameField();
-		fishingBooker.getHalfDayTripBookingDetailsPage().getEmailAddressField();
-		fishingBooker.getHalfDayTripBookingDetailsPage().getAreaCodeFlagIcon();
-		fishingBooker.getHalfDayTripBookingDetailsPage().getSerbiaAreaCode();
-		fishingBooker.getHalfDayTripBookingDetailsPage().getMobileNumberField();
-		fishingBooker.getHalfDayTripBookingDetailsPage().getMessageBox();
-		fishingBooker.getHalfDayTripBookingDetailsPage().getContinueButton();
+		fishingBooker.getHalfDayTripBookingDetailsPage().populateFirstNameField();
+		fishingBooker.getHalfDayTripBookingDetailsPage().populateLastNameField();
+		fishingBooker.getHalfDayTripBookingDetailsPage().populateEmailAddressField();
+		fishingBooker.getHalfDayTripBookingDetailsPage().clickOnAreaCodeFlagContainerDropdown();
+		fishingBooker.getHalfDayTripBookingDetailsPage().clickOnSerbiaAreaCode();
+		fishingBooker.getHalfDayTripBookingDetailsPage().populateMobileNumberField();
+		fishingBooker.getHalfDayTripBookingDetailsPage().populateTextBox();
+		fishingBooker.getHalfDayTripBookingDetailsPage().clickOnContinueButton();
 
 		Browser.getBrowser().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
 		fishingBooker.getFinalStepCreditCardDetailsPage().populateCardNumberField();
