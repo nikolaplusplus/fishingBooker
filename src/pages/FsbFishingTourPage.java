@@ -17,7 +17,7 @@ public class FsbFishingTourPage extends BasePage {
 	private String groupSizeAdultsMinusButton = "//body[1]/div[2]/div[1]/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[2]/form[1]/div[1]/div[2]/div[1]/div[3]/div[2]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/table[1]/tbody[1]/tr[1]/td[1]/button[1]";
 	private String groupSizeChildrenPlusButton = "//body[1]/div[2]/div[1]/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[2]/form[1]/div[1]/div[2]/div[1]/div[3]/div[2]/div[1]/table[2]/tbody[1]/tr[1]/td[2]/table[1]/tbody[1]/tr[1]/td[3]/button[1]";
 	private String tripDateBox = "//input[@id='booking_date_availability_form_search']";
-	private String tripDateBoxCalendarDay = "//td[contains(text(),'19')]";
+	private String tripDateBoxCalendarDay = "//td[contains(text(),'22')]";
 	private String checkAvailability = "//button[@id='check-availability-btn']";
 	private String viewAvailability = "//body/div[@id='main-content']/div[1]/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[2]/form[1]/div[2]/div[1]/ul[1]/div[1]/li[7]/div[1]/div[2]/div[1]/div[2]/button[1]";
 	private String changeSearch = "//button[@id='change-search-btn']";
