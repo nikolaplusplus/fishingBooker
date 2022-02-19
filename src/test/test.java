@@ -48,7 +48,5 @@ public class test extends BaseTest {
 				.findElement(
 						By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[3]/div[1]/div[2]/strong[1]"))
 				.isDisplayed());
-
 	}
-
 }
