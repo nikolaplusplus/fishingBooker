@@ -21,7 +21,7 @@ public class FsbFishingTourPage extends BasePage {
 	private String checkAvailability = "//button[@id='check-availability-btn']";
 	private String viewAvailability = "//body/div[@id='main-content']/div[1]/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[2]/form[1]/div[2]/div[1]/ul[1]/div[1]/li[7]/div[1]/div[2]/div[1]/div[2]/button[1]";
 	private String changeSearch = "//button[@id='change-search-btn']";
-	private String instantBookHalfDayTripPm = "//body/div[@id='main-content']/div[1]/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[2]/form[1]/div[2]/div[1]/ul[1]/div[1]/li[4]/div[1]/div[2]/div[1]/div[2]/button[1]";
+	private String instantBookHalfDayTripPm = "bookbtn-3";
 	private String popUpWindowCloseButton = "//body/div[6]/div[2]/button[1]/span[1]";
 
 	public void clickOnGroupSizeDropdown() {
@@ -73,9 +73,10 @@ public class FsbFishingTourPage extends BasePage {
 	}
 
 	public void clickOnHalfDayTripPmInstantBookButton() {
-		WebDriverWait wait = new WebDriverWait(Browser.getBrowser(), Duration.ofSeconds(30));
-		WebElement el = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(instantBookHalfDayTripPm)));
+		WebDriverWait wait = new WebDriverWait(Browser.getBrowser(), Duration.ofSeconds(10));
+		WebElement el = wait.until(ExpectedConditions.elementToBeClickable(By.id(instantBookHalfDayTripPm)));
 		el.click();
+		
 	}
 
 	public void clickOnViewAvailabilityButton() {
