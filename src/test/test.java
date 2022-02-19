@@ -40,8 +40,7 @@ public class test extends BaseTest {
 		fishingBooker.getFinalStepCreditCardDetailsPage().populatePostalCodeField();
 		fishingBooker.getFinalStepCreditCardDetailsPage().clickOnConfirmBookingButton();
 
-//		Browser.getBrowser().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
-		Thread.sleep(20000);
+		Browser.getBrowser().manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		fishingBooker.getBookingDonePage().getBookingNumberAndCopyToTxtFile();
 
 		Assert.assertTrue(Browser.getBrowser()
